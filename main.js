@@ -3,15 +3,15 @@ $(document).ready(function () {
    
     $("#ok").click(function () { 
         alert("ok");
-        axios.post('http://127.0.0.1:3000/', {
+        axios.get('http://127.0.0.1:3000/', {
             params: {
-              ID: 12345
+              ID: 2
             }
           })
           .then(function (response) {
             console.log(response.data);
             var ok= response.data;
-            alert(ok.name);
+            alert(ok.id);
           })
           .catch(function (error) {
             console.log("se produjo"+error);
