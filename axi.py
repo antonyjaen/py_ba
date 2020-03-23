@@ -9,8 +9,8 @@ CORS(app)
 def Index():
      # request.args.get('ID')
     x = {
-  "name": "John",
-  "age": 30,
+  "name": "tony",
+  "age": 15,
   "city": "New York"
     }  
     y = json.dumps(x)
